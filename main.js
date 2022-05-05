@@ -8,7 +8,7 @@ async function login() {
   let user = Moralis.User.current();
   if (!user) {
     user = await Moralis.authenticate({
-      signingMessage: "Log in using Moralis",
+      signingMessage: "Log in using Moralis...",
     })
       .then(function (user) {
         console.log("logged in user:", user);
